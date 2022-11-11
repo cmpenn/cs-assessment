@@ -1,0 +1,16 @@
+insert times:
+extraLargeArray- 945.7025ms
+largeArray- 9.0216ms
+mediumArray- 168.4us
+smallArray- 53.9us
+tinyArray- 89.5us
+
+
+append times:
+extraLargeArray- 4.4858ms
+largeArray- 554.3 us (I don't know what the hell that is but I'm assuming it's faster than ms)
+mediumArray- 148.7 us
+smallArray- 202us
+tinyArray- 399.5us 
+
+The pattern that I see is that as the array gets the larger the better the append gets. at the start insert was faster but once the mediumArray was reached insert began to slow down a lot in compairson to the insert function. SO the function that scales better is the append function.
